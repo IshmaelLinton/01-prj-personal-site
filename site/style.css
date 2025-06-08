@@ -7,6 +7,36 @@ body {
   color: #f3f3f3;
 }
 
+/* Header section with background image */
+.header {
+  /* Replace the URL below with your chosen image */
+  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80');
+  background-size: cover;      /* Make the image cover the whole header */
+  background-position: center; /* Center the image */
+  padding: 48px 0 48px 0;      /* Space above and below the text */
+  text-align: center;          /* Center the text */
+}
+
+/* Add a dark overlay for better text readability */
+.header-overlay {
+  background: rgba(24, 26, 27, 0.7); /* Semi-transparent dark overlay */
+  padding: 32px 0;
+}
+
+/* Style the main title in the header */
+.header-title {
+  color: #fff;
+  font-size: 2.2em;
+  margin: 0 0 12px 0;
+}
+
+/* Style the welcome message */
+.header-welcome {
+  color: #cce7ff;
+  font-size: 1.2em;
+  margin: 0;
+}
+
 /* Center the main content and give it a card-like look */
 .container {
   max-width: 700px;
@@ -17,7 +47,7 @@ body {
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
-/* Style the main page title */
+/* Style the main page title (if used outside header) */
 h1 {
   text-align: center;
   color: #4fc3f7;
