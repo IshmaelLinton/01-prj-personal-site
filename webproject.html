@@ -1,40 +1,102 @@
-<!-- This is a simple HTML webpage -->
+<!-- Simple personal website with sections for bio, hobbies, interests, and skills -->
 
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>My First Webpage</title>
-  <!-- This is where we add CSS to style the page -->
+  <title>My Personal Website</title>
+  <!-- Simple CSS for a clean, modern look -->
   <style>
-    /* This sets the background color of the whole page */
     body {
-      background-color: #f0f0f0;
-      font-family: Arial, sans-serif; /* Sets the font */
-      margin: 0; /* Removes default margin */
-      padding: 0; /* Removes default padding */
+      background-color: #f8f9fa; /* Light background */
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
     }
 
-    /* This styles the main heading */
+    .container {
+      max-width: 700px; /* Keeps content centered and readable */
+      margin: 40px auto;
+      background: #fff;
+      padding: 24px;
+      border-radius: 8px; /* Rounded corners */
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07); /* Soft shadow */
+    }
+
     h1 {
-      color: #333333;
-      text-align: center; /* Centers the text */
-      margin-top: 40px;
+      text-align: center;
+      color: #222;
+      margin-bottom: 8px;
     }
 
-    /* This styles the paragraph */
-    p {
-      color: #555555;
-      text-align: center; /* Centers the text */
-      font-size: 18px;
+    h2 {
+      color: #007acc;
+      margin-top: 32px;
+      margin-bottom: 8px;
+      font-size: 1.3em;
+    }
+
+    p, ul {
+      color: #444;
+      font-size: 1em;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    /* Add a little space between sections */
+    section {
+      margin-bottom: 24px;
     }
   </style>
 </head>
 <body>
-  <!-- This is the main heading of the page -->
-  <h1>Welcome to My First Webpage!</h1>
+  <div class="container">
+    <!-- Website Title -->
+    <h1>Welcome to My Personal Website!</h1>
 
-  <!-- This is a paragraph of text -->
-  <p>This is a simple webpage made with HTML and CSS.</p>
+    <!-- Bio Section -->
+    <section>
+      <h2>About Me</h2>
+      <p>
+        Hi! I'm [Your Name], a student learning web development. I enjoy creating simple and modern websites as I build my skills. This site will showcase my journey and projects throughout my course.
+      </p>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section>
+      <h2>Hobbies</h2>
+      <ul>
+        <li>Reading science fiction books</li>
+        <li>Playing video games</li>
+        <li>Hiking and exploring nature</li>
+        <li>Listening to music</li>
+      </ul>
+    </section>
+
+    <!-- Interests Section -->
+    <section>
+      <h2>Interests</h2>
+      <ul>
+        <li>Web design and development</li>
+        <li>Artificial Intelligence</li>
+        <li>Photography</li>
+        <li>Learning new programming languages</li>
+      </ul>
+    </section>
+
+    <!-- Skills Section -->
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML (beginner)</li>
+        <li>CSS (beginner)</li>
+        <li>Teamwork and communication</li>
+        <li>Problem solving</li>
+      </ul>
+    </section>
+  </div>
 </body>
 </html>
