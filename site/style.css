@@ -1,7 +1,7 @@
 /* Set a dark background and light text for the whole page */
 body {
-  background-color: #181a1b;
-  font-family: Arial, sans-serif;
+  background-color: #180202;
+  font-family: Trebuchet MS, sans-serif;
   margin: 0;
   padding: 0;
   color: #f3f3f3;
@@ -10,17 +10,18 @@ body {
 /* Header section with background image */
 .header {
   /* Replace the URL below with your chosen image */
-  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80');
+  background-image: url('images/Computerstation_desktop.jpg');
   background-size: cover;      /* Make the image cover the whole header */
-  background-position: center; /* Center the image */
-  padding: 48px 0 48px 0;      /* Space above and below the text */
+  background-position: 50% 30%; /* Center the image */
+  padding: 64px 0 64px 0;      /* Space above and below the text */
   text-align: center;          /* Center the text */
+  border-bottom: 8px solid #000000; /* Bright blue line at the bottom */
 }
 
 /* Add a dark overlay for better text readability */
 .header-overlay {
-  background: rgba(24, 26, 27, 0.7); /* Semi-transparent dark overlay */
-  padding: 32px 0;
+  background: rgba(85, 1, 12, 0.7); /* Semi-transparent dark overlay */
+  padding: 128px 0;
 }
 
 /* Style the main title in the header */
@@ -32,26 +33,48 @@ body {
 
 /* Style the welcome message */
 .header-welcome {
-  color: #cce7ff;
+  color: #ffffff;
   font-size: 1.2em;
   margin: 0;
 }
 
 /* Center the main content and give it a card-like look */
 .container {
-  max-width: 700px;
+  max-width: 2400px;
   margin: 40px auto;
   background: #232526;
   padding: 24px;
-  border-radius: 8px;
+  border-radius: 16px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  border-top: 4px solid #000000;
+}
+
+.side-by-side-list {
+  display: flex;                /* Lay out children in a row */
+  flex-wrap: wrap;              /* Move to next line if not enough space */
+  gap: 16px;                    /* Space between items */
+  margin-bottom: 8px;
+  justify-content: center;
 }
 
 /* Style the main page title (if used outside header) */
 h1 {
   text-align: center;
-  color: #4fc3f7;
+  color: #0a2d79;
   margin-bottom: 8px;
+}
+
+/* Simple "squircle" (rounded square) with transparency */
+.squircle {
+  background: rgba(255,255,255,0.12); /* Semi-transparent white */
+  border-radius: 20px;                /* Rounded corners */
+  padding: 16px 20px;
+  min-width: 120px;
+  text-align: center;
+  margin-bottom: 8px;
+  color: #f3f3f3;
+  font-size: 1em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
 }
 
 /* Style section titles */
